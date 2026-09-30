@@ -129,37 +129,37 @@ try `python3 --version` and use `python3` if it reports 3.12.x. Install Python
 Choose **one** method. With Git installed:
 
 ```console
-git clone --branch main https://github.com/mynkz3/heat-waves.git
-cd heat-waves
+git clone --branch main https://github.com/mynkz3/thermal-sentinel.git
+cd thermal-sentinel
 ```
 
-Or, without Git, put the supplied `heat-waves-source.zip` in a new working
+Or, without Git, put the supplied `thermal-sentinel-source.zip` in a new working
 folder, open a terminal there, and run:
 
 ```console
-python -m zipfile -e heat-waves-source.zip heat-waves
-cd heat-waves
+python -m zipfile -e thermal-sentinel-source.zip thermal-sentinel
+cd thermal-sentinel
 ```
 
-**Run every remaining command from this `heat-waves` folder**, where `app.py`
+**Run every remaining command from this `thermal-sentinel` folder**, where `app.py`
 lives. If you already have the project, skip cloning/extracting it again.
 
 ### 2. Add the data package
 
-Get **`heat-waves-data.zip` from the project maintainer**. It is supplied
+Get **`thermal-sentinel-data.zip` from the project maintainer**. It is supplied
 separately and is **not included in the Git repository**.
 
 Place the data ZIP **one folder above** the project folder. From inside
-`heat-waves`, extract it with:
+`thermal-sentinel`, extract it with:
 
 ```console
-python -m zipfile -e ../heat-waves-data.zip .
+python -m zipfile -e ../thermal-sentinel-data.zip .
 ```
 
 Alternatively, extract it manually alongside `app.py`. The result must be:
 
 ```text
-heat-waves/
+thermal-sentinel/
 ├── app.py
 ├── config.json
 ├── backend/
@@ -170,7 +170,7 @@ heat-waves/
         └── index.html
 ```
 
-Do not leave `data/` and `outputs/` nested inside a `heat-waves-data/` folder.
+Do not leave `data/` and `outputs/` nested inside a `thermal-sentinel-data/` folder.
 Use the source and data packages distributed together.
 
 ### 3. Start the dashboard
@@ -332,7 +332,7 @@ results. If browser assets are missing, run `python app.py prepare` first.
 python app.py package --kind all
 ```
 
-This creates `dist/heat-waves-source.zip` and `dist/heat-waves-data.zip`, with
+This creates `dist/thermal-sentinel-source.zip` and `dist/thermal-sentinel-data.zip`, with
 file-hash manifests. Give both ZIPs to the recipient. It does not upload them.
 
 To regenerate just one package, choose one command:
