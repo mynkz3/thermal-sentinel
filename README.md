@@ -146,14 +146,14 @@ lives. If you already have the project, skip cloning/extracting it again.
 
 ### 2. Add the data package
 
-Get **`thermal-sentinel-data.zip` from the project maintainer**. It is supplied
+Get **`heat-waves-data.zip` from the project maintainer**. It is supplied
 separately and is **not included in the Git repository**.
 
 Place the data ZIP **one folder above** the project folder. From inside
 `thermal-sentinel`, extract it with:
 
 ```console
-python -m zipfile -e ../thermal-sentinel-data.zip .
+python -m zipfile -e ../heat-waves-data.zip .
 ```
 
 Alternatively, extract it manually alongside `app.py`. The result must be:
@@ -170,7 +170,7 @@ thermal-sentinel/
         └── index.html
 ```
 
-Do not leave `data/` and `outputs/` nested inside a `thermal-sentinel-data/` folder.
+Do not leave `data/` and `outputs/` nested inside a `heat-waves-data/` folder.
 Use the source and data packages distributed together.
 
 ### 3. Start the dashboard
@@ -332,7 +332,7 @@ results. If browser assets are missing, run `python app.py prepare` first.
 python app.py package --kind all
 ```
 
-This creates `dist/thermal-sentinel-source.zip` and `dist/thermal-sentinel-data.zip`, with
+This creates `dist/thermal-sentinel-source.zip` and `dist/heat-waves-data.zip`, with
 file-hash manifests. Give both ZIPs to the recipient. It does not upload them.
 
 To regenerate just one package, choose one command:
